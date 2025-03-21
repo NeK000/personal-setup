@@ -2,6 +2,7 @@
   - hosts: localhost
     vars_files:
     - 'group_vars/vault.yaml'
+    become: yes
     roles:
       - role: grog.package
       - role: geerlingguy.docker
