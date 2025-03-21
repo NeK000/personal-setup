@@ -3,6 +3,5 @@
     vars_files:
     - 'group_vars/vault.yaml'
     - 'group_vars/localhost.yaml'
-    become: yes
     roles:
       - role: ironicbadger.bash_aliases

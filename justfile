@@ -37,8 +37,8 @@ vault ACTION:
 initial:
     ansible-playbook -b setup.yml -kK
 package:
-    ansible-playbook -b package.yml
+    ansible-playbook -b package.yml -kK
 alias:
-    ansible-playbook -b alias.yml
+    ansible-playbook -b alias.yml -kK
 docker:
-    ansible-playbook -b docker.yml
+    ansible-playbook -b docker.yml -kK
