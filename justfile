@@ -34,6 +34,11 @@ reqs *FORCE:
 vault ACTION:
     EDITOR='code --wait' ansible-vault {{ACTION}} group_vars/vault.yaml
 
-# Initial configuration of server runs all setups and initial deployments.
 initial:
-    ansible-playbook -b setup.yaml
+    ansible-playbook -b setup.yml -kK
+package:
+    ansible-playbook -b package.yml
+alias:
+    ansible-playbook -b alias.yml
+docker:
+    ansible-playbook -b docker.yml

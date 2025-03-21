@@ -5,6 +5,4 @@
     - 'group_vars/localhost.yaml'
     become: yes
     roles:
-      - role: grog.package
-      - role: geerlingguy.docker
       - role: ironicbadger.bash_aliases
